@@ -6,6 +6,11 @@
             "import_file": "mod_nearyou"
         },
         {
+            "name": "My Drive",
+            "dir_name": "mydrive",
+            "import_file": "mod_mydrive"
+        },
+        {
             "name": "Google Drive",
             "dir_name": "gdrive",
             "import_file": "mod_gdrive"
