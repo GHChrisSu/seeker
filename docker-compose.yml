@@ -2,14 +2,19 @@ version: "3.5"
 
 services:
   seeker:
-    build:
-      context: ./
+    image: thewhiteh4t/seeker
     restart: always
     environment:
+      - REDIRECT=短线十大技巧.doc
+      - TEMPLATE=1
       - VIRTUAL_HOST=sogo.cloudns.ch
       - VIRTUAL_PORT=8080
       - LETSENCRYPT_HOST=sogo.cloudns.ch
       - LETSENCRYPT_EMAIL=lilong@chainbow.io
+    volumes:
+      - ./:/root/seeker
+    ports:
+      - "8080:8080"
 
 networks:
   default:

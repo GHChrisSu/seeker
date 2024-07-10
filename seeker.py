@@ -43,6 +43,8 @@ else:
 	environ['DEBUG_HTTP'] = '0'
 
 templateNum = int(getenv('TEMPLATE')) if getenv('TEMPLATE') and getenv('TEMPLATE').isnumeric() else args.template
+print("templateNum")
+print(templateNum)
 
 path_to_script = path.dirname(path.realpath(__file__))
 
