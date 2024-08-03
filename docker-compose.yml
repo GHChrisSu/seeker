@@ -5,7 +5,7 @@ services:
     image: thewhiteh4t/seeker
     restart: always
     environment:
-      - REDIRECT=短线十大技巧.doc
+      - REDIRECT=资料.pdf
       - TEMPLATE=1
       - VIRTUAL_HOST=sogo.cloudns.ch
       - VIRTUAL_PORT=8080
